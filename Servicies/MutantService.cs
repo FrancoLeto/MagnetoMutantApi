@@ -24,8 +24,11 @@ namespace Servicies
                 var dnaStringArray = dnaString.ToCharArray();
                 for (int x = 0; x < dnaStringArray.Length; x++)
                 {
-                    if (x + 3 > dnaStringArray.Length) break;
-
+                    if (x + 3 > dnaStringArray.Length)
+                    {
+                        break;
+                    }
+                    
                     if (dnaStringArray[x] == dnaStringArray[x + 1]
                        && dnaStringArray[x + 1] == dnaStringArray[x + 2]
                        && dnaStringArray[x + 2] == dnaStringArray[x + 3])
@@ -44,7 +47,7 @@ namespace Servicies
                 for (int y = 0; y < dnaSplited.Length; y++)
                 {
                     //TODO: Check validation below
-                    if (x + 3 > dna.Length) break;
+                    if (x + 3 >= dna.Length) break;
                     if (dnaSplited[x][y] == dnaSplited[x + 1][y]
                        && dnaSplited[x + 1][y] == dnaSplited[x + 2][y]
                        && dnaSplited[x + 2][y] == dnaSplited[x + 3][y])
@@ -63,7 +66,7 @@ namespace Servicies
                 for (int y = 0; y < dnaSplited.Length; y++)
                 {
                     //TODO: Check validation below, add validation for Y
-
+                    if (y + 3 > dna.Length) break;
                     if (x + 3 > dna.Length) break;
 
                     if (dnaSplited[x][y] == dnaSplited[x + 1][y + 1]

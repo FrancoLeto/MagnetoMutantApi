@@ -20,7 +20,7 @@ namespace Servicies.Validators
           var result =   dna.ToList().Select(x => x.ToCharArray())
                             .Where(_dna => _dna.Except(ValidCharacters).Any());
 
-            return result.Count() > 0 ? true : false;
+            return result.Count() > 0 ? false : true;
         }
     }
 }

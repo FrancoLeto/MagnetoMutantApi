@@ -17,23 +17,6 @@ namespace MagnetoMutantApi.Controllers
     {
         private MutantService _mutantService = new MutantService();
 
-        // GET: api/<MutantController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // POST api/<MutantController>
-        //[HttpPost]
-        //public HttpResponseMessage Post([FromBody] string value)
-        //{
-        //    var dnaArray = value.Split();
-        //    var result = _mutantService.IsMutant(dnaArray);
-        //    return result ? new HttpResponseMessage(HttpStatusCode.OK) : new HttpResponseMessage(HttpStatusCode.Forbidden);
-        //}
-
         [HttpPost]
         public HttpResponseMessage Post([FromBody] string[] value)
         {
