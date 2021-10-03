@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagnetoMutantApi", "MagnetoMutantApi\MagnetoMutantApi.csproj", "{F8856515-1FBD-47E3-B055-6EE28F32368D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicies", "Servicies\Servicies.csproj", "{625A0C18-7B2D-4D47-B52D-739E29AD4196}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8856515-1FBD-47E3-B055-6EE28F32368D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8856515-1FBD-47E3-B055-6EE28F32368D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8856515-1FBD-47E3-B055-6EE28F32368D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8856515-1FBD-47E3-B055-6EE28F32368D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{625A0C18-7B2D-4D47-B52D-739E29AD4196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{625A0C18-7B2D-4D47-B52D-739E29AD4196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{625A0C18-7B2D-4D47-B52D-739E29AD4196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{625A0C18-7B2D-4D47-B52D-739E29AD4196}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1D6CF83-D02E-4E62-B9DA-30AA8D4E20DC}
+	EndGlobalSection
+EndGlobal
