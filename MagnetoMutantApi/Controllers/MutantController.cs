@@ -1,11 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Servicies;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Servicies.Interfaces;
 using System.Net;
 using System.Net.Http;
-using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -15,7 +11,12 @@ namespace MagnetoMutantApi.Controllers
     [Route("[controller]")]
     public class MutantController : ControllerBase
     {
-        private MutantService _mutantService = new MutantService();
+        private IMutantService _mutantService;
+
+        public MutantController(IMutantService mutantService)
+        {
+            _mutantService = mutantService;
+        }
 
         [HttpPost]
         public HttpResponseMessage Post([FromBody] string[] value)

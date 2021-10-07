@@ -10,6 +10,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using DataAccess;
+using Servicies;
+using Servicies.Interfaces;
 
 namespace MagnetoMutantApi
 {
@@ -25,6 +29,11 @@ namespace MagnetoMutantApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<MutantDbContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("MutantDB")));
+            services.AddScoped<IMutantDataAccess, MutantDataAccess>();
+            services.AddScoped<IMutantService, MutantService>();
+            services.AddScoped<IStatsService, StatsService>();
             services.AddControllers();
         }
 

@@ -11,7 +11,6 @@ namespace Servicies.Validators
         public bool ValidateDna(string[]dna)
         {
             if(!HasInvalidCharacters(dna)) return false ;
-
             return true;
         }
 
